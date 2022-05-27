@@ -1,20 +1,21 @@
-package com.example.mobilele.models;
+package com.example.mobilele.models.entities;
 
 import com.example.mobilele.models.enums.Engine;
 import com.example.mobilele.models.enums.Transmission;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
+import java.util.Objects;
 
 @Entity
 @Table(name = "offers")
-public class OfferEntity  extends BaseEntity{
+public class OfferEntity  extends BaseEntity {
 
     @Column(columnDefinition = "Text")
     private String description;
     @Enumerated(value = EnumType.STRING)
     private Engine engine;
-    @Column(name = "image_url")
+    @Column(name = "image_url",length = 1000)
     private String imageUrl;
     private int mileage;
     private BigDecimal price;
@@ -108,5 +109,17 @@ public class OfferEntity  extends BaseEntity{
     public OfferEntity setSeller(UserEntity seller) {
         this.seller = seller;
         return this;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof OfferEntity that)) return false;
+        return getMileage() == that.getMileage() && getYear() == that.getYear() && Objects.equals(getDescription(), that.getDescription()) && getEngine() == that.getEngine() && Objects.equals(getImageUrl(), that.getImageUrl()) && Objects.equals(getPrice(), that.getPrice()) && getTransmission() == that.getTransmission() && Objects.equals(getModel(), that.getModel()) && Objects.equals(getSeller(), that.getSeller());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getDescription(), getEngine(), getImageUrl(), getMileage(), getPrice(), getTransmission(), getYear(), getModel(), getSeller());
     }
 }

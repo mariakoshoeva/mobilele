@@ -1,0 +1,192 @@
+[
+  {
+    "created": "2022-05-25T23:12:54Z",
+    "modified": "2022-05-25T23:12:57Z",
+    "description": "Flash offer",
+    "engine": "DIESEL",
+    "imageUrl": "https://thumbs.dreamstime.com/z/blue-p-226041481.jpg",
+    "mileage": 2000,
+    "price": 25000.00,
+    "transmission": "MANUAL",
+    "year": 2015,
+    "model": {
+      "created": "2022-05-25T17:42:29Z",
+      "modified": "2022-05-25T17:42:32Z",
+      "name": "640",
+      "category": "CAR",
+      "imageUrl": "https://www.google.com/url?sa\u003di\u0026url\u003dhttps%3A%2F%2Fzeperfs.com%2Fen%2Ffiche4065-bmw-640-d.htm\u0026psig\u003dAOvVaw311u5KJs7RUZAB9jTkth5z\u0026ust\u003d1653587034227000\u0026source\u003dimages\u0026cd\u003dvfe\u0026ved\u003d0CAwQjRxqFwoTCLjjlfqZ-_cCFQAAAAAdAAAAABAD",
+      "endYear": null,
+      "startYear": 2004,
+      "brand": {
+        "name": "BMW",
+        "created": "2022-05-25T17:10:25Z",
+        "modified": "2022-05-25T17:10:29Z"
+      }
+    },
+    "seller": {
+      "created": "2022-05-25T23:31:59Z",
+      "modified": "2022-05-25T23:32:02Z",
+      "firstName": "Pesho",
+      "imageUrl": "https://www.iconspng.com/images/young-user-icon.jpg",
+      "isActive": true,
+      "lastName": "Peshov",
+      "password": "14521ajhnfg",
+      "userName": "pesho_peshev",
+      "role": {
+        "name": "USER"
+      }
+    }
+  },
+  {
+    "created": "2022-05-25T23:15:50Z",
+    "modified": "2022-05-25T23:15:53Z",
+    "description": "Giveaways or free samples",
+    "engine": "GASOLINE",
+    "imageUrl": "https://image.shutterstock.com/image-illustration/free-sample-rubber-stamp-over-600w-144304825.jpg",
+    "mileage": 10000,
+    "price": 60000.00,
+    "transmission": "AUTOMATIC",
+    "year": 2017,
+    "model": {
+      "created": "2022-05-25T17:33:27Z",
+      "modified": "2022-05-25T17:33:30Z",
+      "name": "TG",
+      "category": "TRUCK",
+      "imageUrl": "https://www.google.com/url?sa\u003di\u0026url\u003dhttps%3A%2F%2Fblog.truckscout24.com%2Ftractor-units%2Fman-tgx-18-400-test%2F\u0026psig\u003dAOvVaw00D0jR4JtqQkUEuMpT0bbm\u0026ust\u003d1653586481664000\u0026source\u003dimages\u0026cd\u003dvfe\u0026ved\u003d0CAwQjRxqFwoTCIj70fmX-_cCFQAAAAAdAAAAABAD",
+      "endYear": null,
+      "startYear": 200,
+      "brand": {
+        "name": "Man",
+        "created": "2022-05-25T17:06:42Z",
+        "modified": "2022-05-25T17:06:45Z"
+      }
+    },
+    "seller": {
+      "created": "2022-05-25T23:31:59Z",
+      "modified": "2022-05-25T23:32:02Z",
+      "firstName": "Pesho",
+      "imageUrl": "https://www.iconspng.com/images/young-user-icon.jpg",
+      "isActive": true,
+      "lastName": "Peshov",
+      "password": "14521ajhnfg",
+      "userName": "pesho_peshev",
+      "role": {
+        "name": "USER"
+      }
+    }
+  },
+  {
+    "created": "2022-05-25T23:19:47Z",
+    "modified": "2022-05-25T23:19:51Z",
+    "description": "Buy one, get...",
+    "engine": "ELECTRIC",
+    "imageUrl": "https://depositphotos.com/30052977/stock-illustration-risk-free-stamp.html",
+    "mileage": 12000,
+    "price": 18000.00,
+    "transmission": "MANUAL",
+    "year": 2008,
+    "model": {
+      "created": "2022-05-25T17:26:33Z",
+      "modified": "2022-05-25T17:26:36Z",
+      "name": "GTS",
+      "category": "CAR",
+      "imageUrl": "https://www.google.com/url?sa\u003di\u0026url\u003dhttps%3A%2F%2Fwww.mercedes-benz.bg%2Fpassengercars%2Fmercedes-benz-cars%2Fmodels%2Famg-gt%2Fcoupe-c190%2Fexplore.html\u0026psig\u003dAOvVaw2O-J0XMA7jCyHJTbtOqaQk\u0026ust\u003d1653586027968000\u0026source\u003dimages\u0026cd\u003dvfe\u0026ved\u003d0CAwQjRxqFwoTCIDGwsuW-_cCFQAAAAAdAAAAABAD",
+      "endYear": null,
+      "startYear": 2005,
+      "brand": {
+        "name": "Mercedes-Benz",
+        "created": "2022-05-25T17:10:45Z",
+        "modified": "2022-05-25T17:10:47Z"
+      }
+    },
+    "seller": {
+      "created": "2022-05-25T23:35:54Z",
+      "modified": "2022-05-25T23:36:02Z",
+      "firstName": "Gosho",
+      "imageUrl": "https://fupping.com/snax_item/personalize-dont-generalize/",
+      "isActive": false,
+      "lastName": "Georgiev",
+      "password": "124563jsbye",
+      "userName": "g_georgiev",
+      "role": {
+        "name": "ADMIN"
+      }
+    }
+  },
+  {
+    "created": "2022-05-25T23:24:12Z",
+    "modified": "2022-05-25T23:24:15Z",
+    "description": "Recurring sales",
+    "engine": "GASOLINE",
+    "imageUrl": "https://st.depositphotos.com/1605004/2991/v/950/depositphotos_29915139-stock-illustration-best-deal-stamp.jpg",
+    "mileage": 5800,
+    "price": 7000.00,
+    "transmission": "MANUAL",
+    "year": 2014,
+    "model": {
+      "created": "2022-05-25T17:25:34Z",
+      "modified": "2022-05-25T17:25:39Z",
+      "name": "CLA",
+      "category": "CAR",
+      "imageUrl": "https://www.google.com/url?sa\u003di\u0026url\u003dhttps%3A%2F%2Fwww.mercedes-benz.bg%2Fpassengercars%2Fmercedes-benz-cars%2Fmodels%2Fcla%2Fcoupe-c118%2Fdesign.pi.html%2Fmercedes-benz-cars%2Fmodels%2Fcla%2Fcoupe-c118%2Fdesign%2Fdesign-packages%2Fnight-package\u0026psig\u003dAOvVaw24nR-5ww7kRPJ4uXUidseU\u0026ust\u003d1653585537152000\u0026source\u003dimages\u0026cd\u003dvfe\u0026ved\u003d0CAwQjRxqFwoTCICtmZmV-_cCFQAAAAAdAAAAABAD",
+      "endYear": 2019,
+      "startYear": 2001,
+      "brand": {
+        "name": "Mercedes-Benz",
+        "created": "2022-05-25T17:10:45Z",
+        "modified": "2022-05-25T17:10:47Z"
+      }
+    },
+    "seller": {
+      "created": "2022-05-25T23:35:54Z",
+      "modified": "2022-05-25T23:36:02Z",
+      "firstName": "Gosho",
+      "imageUrl": "https://fupping.com/snax_item/personalize-dont-generalize/",
+      "isActive": false,
+      "lastName": "Georgiev",
+      "password": "124563jsbye",
+      "userName": "g_georgiev",
+      "role": {
+        "name": "ADMIN"
+      }
+    }
+  },
+  {
+    "created": "2022-05-25T23:27:18Z",
+    "modified": "2022-05-25T23:27:21Z",
+    "description": "Limited time offer",
+    "engine": "DIESEL",
+    "imageUrl": "https://depositphotos.com/30052977/stock-illustration-risk-free-stamp.html",
+    "mileage": 14000,
+    "price": 9500.00,
+    "transmission": "AUTOMATIC",
+    "year": 2016,
+    "model": {
+      "created": "2022-05-25T17:29:40Z",
+      "modified": "2022-05-25T17:29:42Z",
+      "name": "Viano",
+      "category": "BUSS",
+      "imageUrl": "https://www.google.com/url?sa\u003di\u0026url\u003dhttps%3A%2F%2Fkolalok.com%2Fgabariti%2Fmercedes-benz%2Fviano.html\u0026psig\u003dAOvVaw0Aqpa5XL86AagbaCiONmnI\u0026ust\u003d1653586345691000\u0026source\u003dimages\u0026cd\u003dvfe\u0026ved\u003d0CAwQjRxqFwoTCNiw66eX-_cCFQAAAAAdAAAAABAD",
+      "endYear": null,
+      "startYear": 2000,
+      "brand": {
+        "name": "Mercedes-Benz",
+        "created": "2022-05-25T17:10:45Z",
+        "modified": "2022-05-25T17:10:47Z"
+      }
+    },
+    "seller": {
+      "created": "2022-05-25T23:31:59Z",
+      "modified": "2022-05-25T23:32:02Z",
+      "firstName": "Pesho",
+      "imageUrl": "https://www.iconspng.com/images/young-user-icon.jpg",
+      "isActive": true,
+      "lastName": "Peshov",
+      "password": "14521ajhnfg",
+      "userName": "pesho_peshev",
+      "role": {
+        "name": "USER"
+      }
+    }
+  }
+]

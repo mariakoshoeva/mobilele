@@ -1,4 +1,4 @@
-package com.example.mobilele.models;
+package com.example.mobilele.models.entities;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;

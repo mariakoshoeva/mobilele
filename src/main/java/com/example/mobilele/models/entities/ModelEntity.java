@@ -1,4 +1,4 @@
-package com.example.mobilele.models;
+package com.example.mobilele.models.entities;
 
 import com.example.mobilele.models.enums.Category;
 
@@ -6,16 +6,16 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "models")
-public class ModelEntity  extends BaseEntity{
+public class ModelEntity  extends BaseEntity {
     private String name;
     @Enumerated(value = EnumType.STRING)
     private Category category;
-    @Column(length = 512)
+    @Column(length = 1000)
     private String imageUrl;
     @Column(name = "end_year")
-    private int endYear;
+    private Integer endYear;
     @Column(name = "start_year")
-    private int startYear;
+    private Integer startYear;
     @ManyToOne
     private BrandEntity brand;
 
@@ -49,20 +49,20 @@ public class ModelEntity  extends BaseEntity{
         return this;
     }
 
-    public int getEndYear() {
+    public Integer getEndYear() {
         return endYear;
     }
 
-    public ModelEntity setEndYear(int endYear) {
+    public ModelEntity setEndYear(Integer endYear) {
         this.endYear = endYear;
         return this;
     }
 
-    public int getStartYear() {
+    public Integer getStartYear() {
         return startYear;
     }
 
-    public ModelEntity setStartYear(int startYear) {
+    public ModelEntity setStartYear(Integer startYear) {
         this.startYear = startYear;
         return this;
     }
