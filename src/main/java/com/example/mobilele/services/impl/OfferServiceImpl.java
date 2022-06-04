@@ -1,12 +1,13 @@
-package com.example.mobilele.services;
+package com.example.mobilele.services.impl;
 
 import com.example.mobilele.models.dtos.OfferSeedDto;
 import com.example.mobilele.models.entities.*;
 import com.example.mobilele.repositories.*;
+import com.example.mobilele.services.OfferService;
 import com.google.gson.Gson;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
+
 
 
 import java.io.IOException;
@@ -73,8 +74,9 @@ public class OfferServiceImpl implements OfferService {
                     roleRepository.save(role);
                 }
                 if (this.userRepository.existsByUserName(seller.getUserName())) {
-                    seller = userRepository.findByUserName(seller.getUserName());
-                    offerEntity.setSeller(userRepository.findByUserName(seller.getUserName()));
+                    seller = userRepository.findByUserName(seller.getUserName()).orElse(null);
+                    assert seller != null;
+                    offerEntity.setSeller(userRepository.findByUserName(seller.getUserName()).orElse(null));
                 } else {
                     userRepository.save(seller);
                 }
