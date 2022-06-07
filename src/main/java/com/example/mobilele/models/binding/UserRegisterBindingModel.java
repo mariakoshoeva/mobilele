@@ -3,22 +3,24 @@ package com.example.mobilele.models.binding;
 import com.example.mobilele.models.enums.UserRole;
 import org.hibernate.validator.constraints.Length;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
 public class UserRegisterBindingModel {
-    @NotNull
+    @NotEmpty
     @Length(min = 2,max = 20)
     private String firstName;
 
-    @NotNull
+    @NotEmpty
     @Length(min = 2,max = 20)
     private String lastName;
 
-    @NotNull
+    @NotEmpty
     @Length(min = 2,max = 20)
     private String username;
 
-    @NotNull
+    @NotEmpty
     @Length(min = 2,max = 20)
     private String password;
 
