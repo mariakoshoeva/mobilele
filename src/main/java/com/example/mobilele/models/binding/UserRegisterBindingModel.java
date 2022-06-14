@@ -1,9 +1,9 @@
 package com.example.mobilele.models.binding;
 
 import com.example.mobilele.models.enums.UserRole;
+import com.example.mobilele.models.validation.UniqueUserName;
 import org.hibernate.validator.constraints.Length;
 
-import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
@@ -18,6 +18,7 @@ public class UserRegisterBindingModel {
 
     @NotEmpty
     @Length(min = 2,max = 20)
+    @UniqueUserName(message = "User with such username already exist!")
     private String username;
 
     @NotEmpty

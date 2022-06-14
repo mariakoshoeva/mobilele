@@ -1,5 +1,7 @@
 package com.example.mobilele.models.binding;
 
+import com.example.mobilele.models.validation.UniqueUserName;
+
 public class UserLoginBindingModel {
     private String username;
     private String password;

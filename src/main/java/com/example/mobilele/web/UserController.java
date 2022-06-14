@@ -21,7 +21,7 @@ import javax.validation.Valid;
 @Controller
 @RequestMapping("/users")
 public class UserController {
-    private static Logger logger = LoggerFactory.getLogger(UserController.class);
+    private final static Logger logger = LoggerFactory.getLogger(UserController.class);
     private final UserService userService;
 
     public UserController(UserService userService) {
@@ -33,6 +33,11 @@ public class UserController {
         model.addAttribute("userRegisterForm", new UserRegisterBindingModel());
     }
 
+    @ModelAttribute("userLoginBindingModel")
+    public void initUserLoginBindingModel(Model model){
+        model.addAttribute("userLoginBindingModel", new UserLoginBindingModel());
+    }
+
     @GetMapping("/register")
     public String register() {
         return "auth-register.html";
@@ -41,7 +46,6 @@ public class UserController {
     @PostMapping("/register")
     public String registerConfirm(@Valid UserRegisterBindingModel userRegisterBindingModel,
                                   BindingResult bindingResult, RedirectAttributes redirectAttributes) {
-//        model.addAttribute("userRegisterForm",userRegisterBindingModel);
         if (bindingResult.hasErrors()) {
             redirectAttributes.addFlashAttribute("userRegisterForm",userRegisterBindingModel);
             redirectAttributes.addFlashAttribute("org.springframework.validation.BindingResult.userRegisterForm", bindingResult);
@@ -52,12 +56,15 @@ public class UserController {
     }
 
     @GetMapping("/login")
-    public String login() {
+    public String login(Model model) {
+        if(!model.containsAttribute("loginSuccessful")){
+            model.addAttribute("loginSuccessful",true);
+        }
         return "auth-login";
     }
 
     @PostMapping("/login")
-    public String loginConfirm(UserLoginBindingModel userLoginBindingModel) {
+    public String loginConfirm(UserLoginBindingModel userLoginBindingModel,RedirectAttributes redirectAttributes) {
         boolean loginSuccessful = userService
                 .login(new UserLoginServiceModel()
                         .setUsername(userLoginBindingModel
@@ -71,8 +78,8 @@ public class UserController {
         if (loginSuccessful) {
             return "redirect:/";
         }
-
-        return "redirect:/login";
+        redirectAttributes.addFlashAttribute("loginSuccessful",false);
+        return "redirect:login";
     }
 
     @GetMapping("/logout")

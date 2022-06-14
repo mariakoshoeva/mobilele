@@ -11,3 +11,8 @@ INSERT INTO mobilele.models (id, created, modified, category, end_year, image_ur
 VALUES (2, '2022-06-14 19:11:06', '2022-06-14 19:11:10', 'CAR', null,
         'https://www.mercedes-benz.bg/passengercars/mercedes-benz-cars/models/eqc/design/line-details/_jcr_content/contentgallerycontainer/par/contentgallery_55cc/par/contentgallerytile_f/image.MQ6.6.20210108133021.jpeg',
         'EQC', 2019, 2);
+
+INSERT INTO mobilele.roles (id, name)
+ VALUES (1, 'USER');
+INSERT INTO mobilele.roles (id, name)
+VALUES (2, 'ADMIN');

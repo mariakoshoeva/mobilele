@@ -6,7 +6,7 @@ import javax.persistence.*;
 @Table(name = "users")
 public class UserEntity extends BaseEntity {
     @Column(unique = true,nullable = false)
-    private String userName;
+    private String username;
     private String password;
     @Column(name = "first_name")
     private String firstName;
@@ -22,12 +22,12 @@ public class UserEntity extends BaseEntity {
     public UserEntity() {
     }
 
-    public String getUserName() {
-        return userName;
+    public String getUsername() {
+        return username;
     }
 
-    public UserEntity setUserName(String userName) {
-        this.userName = userName;
+    public UserEntity setUsername(String userName) {
+        this.username = userName;
         return this;
     }
 

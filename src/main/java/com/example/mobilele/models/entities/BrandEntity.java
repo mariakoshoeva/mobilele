@@ -1,8 +1,7 @@
 package com.example.mobilele.models.entities;
 
 
-import com.example.mobilele.utils.BrandEntityJsonAdapter;
-import com.google.gson.annotations.JsonAdapter;
+
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -12,7 +11,6 @@ import java.util.List;
 
 @Entity
 @Table(name = "brands")
-@JsonAdapter(BrandEntityJsonAdapter.class)
 public class BrandEntity extends BaseEntity {
     @Column(unique = true,nullable = false)
     private String name;

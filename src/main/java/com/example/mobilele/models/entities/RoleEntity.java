@@ -1,7 +1,7 @@
 package com.example.mobilele.models.entities;
 
 import com.example.mobilele.models.enums.UserRole;
-import com.google.gson.annotations.Expose;
+
 
 import javax.persistence.*;
 
@@ -11,7 +11,6 @@ public class RoleEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Expose
     @Enumerated(value = EnumType.STRING)
     private UserRole name;
 

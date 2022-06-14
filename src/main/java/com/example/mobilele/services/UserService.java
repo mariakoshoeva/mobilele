@@ -8,5 +8,5 @@ public interface UserService {
     boolean login(UserLoginServiceModel userLoginServiceModel);
     void logout();
 
-    boolean register(UserRegisterBindingModel userRegisterBindingModel);
+    void register(UserRegisterBindingModel userRegisterBindingModel);
 }

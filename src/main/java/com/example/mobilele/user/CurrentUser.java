@@ -1,5 +1,7 @@
 package com.example.mobilele.user;
 
+import com.example.mobilele.models.entities.RoleEntity;
+import com.example.mobilele.models.enums.UserRole;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.annotation.SessionScope;
 
@@ -10,6 +12,17 @@ public class CurrentUser {
     private String username;
     private String firstName;
     private String lastName;
+    private Long id;
+    private RoleEntity role;
+
+    public Long getId() {
+        return id;
+    }
+
+    public CurrentUser setId(Long id) {
+        this.id = id;
+        return this;
+    }
 
     public boolean isLoggedIn() {
         return isLoggedIn;
@@ -44,6 +57,22 @@ public class CurrentUser {
 
     public CurrentUser setLastName(String lastName) {
         this.lastName = lastName;
+        return this;
+    }
+
+    public boolean isAdmin(){
+        if(role == null){
+            return false;
+        }
+        return role.getName().equals(UserRole.ADMIN);
+    }
+
+    public RoleEntity getRole() {
+        return role;
+    }
+
+    public CurrentUser setRole(RoleEntity role) {
+        this.role = role;
         return this;
     }
 }
